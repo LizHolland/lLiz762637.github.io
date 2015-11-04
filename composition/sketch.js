@@ -27,7 +27,9 @@ function setup() {
 }
 
 function draw() {
-    
+  
+  cursor(CROSS);
+  
     background("#E9967A");
     fill("#00BFFF");
     strokeWeight(10);
@@ -35,21 +37,29 @@ function draw() {
     stroke("#F08080");
     ellipse(45, 536, 826, 226);
     triangle(120,230,445,324,212,389);
+    fill("#6495ED")
+quad(538, 31, 386, 320, 369, 363, 930, 74);
+    triangle(120,230,445,324,212,389);
     noStroke();
     fill("#F08080");
-    ellipse(145, 89, 26, 756);
+    ellipse(mouseX,mouseY,26,756);
    triangle(330,130,35,324,212,389);
-   
+   blendMode(LIGHTEST);
   p1 = {x: 457, y: 309}, p2 = {x: 34, y: 23}
 p3 = {x: 233, y: 330}, p4 = {x: 40, y: 500}
 fill("#E9967A");
 stroke("#48D1CC");
-curve(p1.x, p1.y, p1.x, p1.y, p2.x, p2.y, p3.x, p3.y)
+curve(p1.x, p1.y, p1.x, p1.y, p2.x, p2.y, p3.x, p3.y);
 stroke("#FAFAD2");
-curve(p1.x, p1.y, p2.x, p2.y, p3.x, p3.y, p4.x, p4.y)
+curve(p1.x, p1.y, p2.x, p2.y, p3.x, p3.y, p4.x, p4.y);
 stroke("#FFB6C1");
-curve(p2.x, p2.y, p3.x, p3.y, p4.x, p4.y, p4.x, p4.y)
-   
+curve(p2.x, p2.y, p3.x, p3.y, p4.x, p4.y, p4.x, p4.y);
+
+fill("#7FFF00");
+strokeWeight(1)
+quad(534, 31, 386, 320, 369, 363, 838, 574);
+fill("#6495ED")
+quad(538, 31, 386, 320, 369, 363, 930, 74);
 
 
 }
